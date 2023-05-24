@@ -1,0 +1,13 @@
+import Foundation
+
+func solution(_ str_list:[String], _ ex:String) -> String {
+    var arr: String = ""
+    
+    for i in str_list {
+        if !i.contains(ex) {
+            arr += i
+        }
+    }
+    
+    return arr
+}
